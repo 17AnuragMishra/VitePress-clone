@@ -20,7 +20,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-gray-800 text-white min-h-screen">
       {/* Navbar */}
       <header
         className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-3 border-b border-gray-800 ${navbarBg} transition-colors duration-300`}
@@ -69,7 +69,7 @@ function App() {
         </div>
       </header>
 
-      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
 
         <div className="max-w-lg text-left">
           <h1 className="text-6xl font-extrabold leading-tight">
@@ -110,9 +110,9 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white">
+      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
         <FeatureBox
-          icon="📝"
+          icon={"🗒️"}
           title="Focus on Your Content"
           description="Effortlessly create beautiful documentation sites with just markdown."
         />
@@ -139,7 +139,13 @@ function App() {
           description="Use Vue syntax and components directly in markdown, or build custom themes with Vue."
         />
         <FeatureBox
-          icon="🚀"
+          icon={
+            <img
+              src="/rocket.png"
+              alt="VitePress Logo"
+              className="w-12 h-12"
+            />
+          }
           title="Ship Fast Sites"
           description="Fast initial load with static HTML, fast post-load navigation with client-side routing."
         />
@@ -151,7 +157,7 @@ function App() {
 function FeatureBox({ icon, title, description }) {
   return (
     <div className="bg-gray-900 p-6 rounded-lg shadow-md text-left hover:bg-gray-800 transition hover:scale-105 max-w-xs mx-auto">
-      <div className="text-3xl mb-4 flex justify-center">{icon}</div>
+      <div className="text-3xl mb-4 flex justify-left">{icon}</div>
       <h2 className="text-xl font-semibold text-white mb-2">{title}</h2>
       <p className="text-gray-400 text-sm">{description}</p>
     </div>
