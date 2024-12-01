@@ -23,7 +23,7 @@ function App() {
     <div className="bg-gray-800 text-white min-h-screen">
       {/* Navbar */}
       <header
-        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-3 border-b border-gray-800 ${navbarBg} transition-colors duration-100`}
+        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-3 border-b border-gray-800 ${navbarBg} transition-colors duration-300`}
       >
         <div className="flex items-center space-x-4">
           <img
@@ -69,7 +69,7 @@ function App() {
         </div>
       </header>
 
-      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-zinc-950 text-white">
+      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
 
         <div className="max-w-lg text-left">
           <h1 className="text-6xl font-extrabold leading-tight">
@@ -110,7 +110,7 @@ function App() {
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-zinc-950 text-white">
+      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
         <FeatureBox
           icon={"🗒️"}
           title="Focus on Your Content"
@@ -156,7 +156,7 @@ function App() {
 
 function FeatureBox({ icon, title, description }) {
   return (
-    <div className="bg-gray-900 p-6 rounded-lg shadow-md text-left hover:bg-gray-800 transition hover:scale-105 max-w-xs mx-auto">
+    <div className="bg-gray-900 p-6 rounded-lg shadow-md text-left hover:scale-105 max-w-xs mx-auto">
       <div className="text-3xl mb-4 flex justify-left">{icon}</div>
       <h2 className="text-xl font-semibold text-white mb-2">{title}</h2>
       <p className="text-gray-400 text-sm">{description}</p>
