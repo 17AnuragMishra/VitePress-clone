@@ -23,7 +23,7 @@ function App() {
     <div className="bg-gray-800 text-white min-h-screen">
       {/* Navbar */}
       <header
-        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-3 border-b border-gray-800 ${navbarBg} transition-colors duration-300`}
+        className={`fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-3 border-gray-800 ${navbarBg} transition-colors duration-300`}
       >
         <div className="flex items-center space-x-4">
           <img
@@ -69,7 +69,7 @@ function App() {
         </div>
       </header>
 
-      <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
+      <section className="flex flex-col lg:flex-row items-center justify-around py-20 px-6 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
 
         <div className="max-w-lg text-left">
           <h1 className="text-6xl font-extrabold leading-tight">
@@ -101,7 +101,7 @@ function App() {
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center p-8 rounded-full bg-black">
+        <div className="relative flex justify-center items-center">
           <div className="absolute inset-0 bg-gradient-to-l from-custom-purple to-cyan-400  blur-3xl opacity-90 rounded-lg"></div>
           <div className="relative z-10 p-6 rounded-xl">
             <img
