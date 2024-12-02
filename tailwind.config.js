@@ -10,6 +10,12 @@ module.exports = {
         'custom-pink': '#DB2777',
         'custom-yellow': '#FACC15',
       },
+      blur: {
+        '3xl': '70px',
+      },
+      spacing: {
+        '4': '1rem',
+      },
     },
   },
   plugins: [],

@@ -101,13 +101,17 @@ function App() {
           </div>
         </div>
 
-        <div className="bg-gradient-to-r from-blue-500 to-pink-500 glow-gradient p-5 rounded-lg shadow-sm">
-          <img
-            src="/vitepress.png"
-            alt="VitePress Logo"
-            className="w-80 h-auto drop-shadow-lg"
-          />
+        <div className="relative flex justify-center items-center p-8 rounded-full bg-black">
+          <div className="absolute inset-0 bg-gradient-to-l from-custom-purple to-cyan-400  blur-3xl opacity-90 rounded-lg"></div>
+          <div className="relative z-10 p-6 rounded-xl">
+            <img
+              src="/vitepress.png"
+              alt="VitePress Logo"
+              className="w-80 h-auto drop-shadow-lg"
+            />
+          </div>
         </div>
+
       </section>
 
       <section className="flex flex-col lg:flex-row items-center justify-around py-16 px-8 lg:px-20 bg-gradient-to-br from-gray-800 via-gray-800 text-white">
